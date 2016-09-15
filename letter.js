@@ -110,7 +110,7 @@ var playGame = function() {
             // validate();
             proceed();
         });
-    } else if (guessesLeft < 1) {
+    } else if (guessesLeft < 0) {
         console.log('Game Over! You lost. The correct word was ' + theWord + '!')
         playAgain();
     }
